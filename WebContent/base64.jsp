@@ -29,7 +29,9 @@
 		if (rf != null && rf.exists()) {
 			try {
 				InputStream is = new FileInputStream(rf);
-				byte binarys[] = new byte[1024];
+				//byte binarys[] = new byte[1024];
+				byte binarys[] = new byte[(int) file.length()];
+
 				int t = 0;
 				while ((t = is.read(binarys)) > 0) {
 					size += t;
