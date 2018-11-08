@@ -30,7 +30,7 @@
 			try {
 				InputStream is = new FileInputStream(rf);
 				//byte binarys[] = new byte[1024];
-				byte binarys[] = new byte[(int) file.length()];
+				byte binarys[] = new byte[(int) rf.length()];
 
 				int t = 0;
 				while ((t = is.read(binarys)) > 0) {
